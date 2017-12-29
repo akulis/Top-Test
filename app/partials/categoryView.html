@@ -1,0 +1,88 @@
+<section>
+  <!-- <div ng-app="topAnnouncement" ng-controller="announcementCtrl">
+    <p ng-bind-html="theAnnouncement"></p>
+  </div> -->
+  <!-- Edit Announcement Here -->
+  <!-- <br>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">{{'Announcement' | r | xlat}}</h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center">The webstore will be down from 4p CST to 5:30p CST. We apologize for any inconvenience.</h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Announcement -->
+  <!-- Selective Category Heading -->
+  <!-- <br> -->
+  <!-- Set currentCategory.Name == to categories where heading will show -->
+  <!-- <div class="panel panel-primary" ng-show="currentCategory.Name == 'Apparel'" >
+    <div class="panel-heading">
+      <h2 class="panel-title panel-primary">
+        {{'Important Announcement -- PLEASE READ' | r | xlat}}
+      </h2>
+    </div>
+    <div class="panel-body">
+      <h4 class="text-center"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>  Enter text here.</h4>
+    </div>
+  </div>
+  <br> -->
+  <!-- End Selective Category Heading -->
+  <nav id="451qa_nav_hdr" class="nav">
+    <ul>
+      <li class="hidden-sm hidden-xs">
+        <span ng-click="toggleNav()"><i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i></span>
+      </li>
+      <li>
+        <span id="451_lbl_curcat" class="text-primary" ng-bind-html="currentCategory.Name || '  {{'Categories' | r | xlat}}'"></span>
+      </li>
+      <li class="customSearchBar">
+        <productsearchinput></productsearchinput>
+        <!-- <a href="search">
+          <span><i class="fa fa-search text-primary"></i></span>
+        </a> -->
+      </li>
+    </ul>
+  </nav>
+  <div class="row">
+    <aside class="col-md-3 visible-md visible-lg" ng-if="navStatus.visible">
+      <div class="panel panel-default panel-nav">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{'Category List' | r | xlat}}</h3>
+        </div>
+        <nav class="nav 451qa_sidenav panel-body">
+          <ul>
+            <categorycollapse tree='tree' current='currentCategory'></categorycollapse>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div ng-class="{ 'col-md-9': navStatus.visible, 'col-md-12': !navStatus.visible }">
+      <!-- Above Category Message -->
+      <!-- <br>
+      <div class="categoryPanel text-center" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <h2 class="colorBlack"><strong>Welcome to the Foremost Webstore!</strong></h2>
+        <h4>Your resource for high quality apparel</h4>
+      </div>
+      <br> -->
+      <!-- End Message -->
+      <categorylistview></categorylistview>
+      <loadingindicator ng-show="productLoadingIndicator" title="{{'Please wait while we fetch all products' | r | xlat}}" />
+      <!-- Below Category Message -->
+      <!-- <br>
+      <div class="categoryPanel" ng-show="(currentCategory.Name === {{'Categories' | r | xlat}})">
+        <ul>
+          <li>All items are non-stock and are produced twice per month. </li>
+          <li>Orders placed between the 1st and 15th of each month will ship around the 1st business day of the next month.</li>
+          <li>Orders placed between the 16th and end of the month will ship around the 15th of the next month.</li>
+          <li><i>All of the items featured on this site are made-to-order just for you, so we appreciate your understanding that returns and exchanges are not accepted except in the case of defective product.</i></li>
+          <li>Customer Service: <a href="mailto:webservices@toppromotions.com?subject=WebstoreNameHere%20Webstore%20Customer%20Service%20Question">webservices@toppromotions.com</a> or 608-826-6990, M-F 8am-5pm CST</li>
+        </ul>
+      </div>
+      <br> -->
+      <!-- End Message -->
+      <productlistview></productlistview>
+    </div>
+  </div>
+</section>

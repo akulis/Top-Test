@@ -1,0 +1,479 @@
+/* Checkout Button Text */
+
+.checkoutButtonText {
+  /*font-size: 10px;*/
+  font-size: 1.2vh;
+}
+
+/* Fixed Product Image */
+
+.fixedProductImage {
+  position: fixed !important;
+}
+
+/* Jumbo Header Home Page*/
+
+.jumboHeader {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Spending Account Nav Option */
+
+.spendingaccounts {
+  padding: 15px 8px;
+  color: #ffffff;
+  font-size: 75%;
+}
+
+.spendingaccounts-xs {
+  padding: 18px 0 0;
+  color: #ffffff;
+  font-size: 1.7vmin;
+}
+
+.FontSmall {
+  font-size: 85%;
+}
+
+/* Light Scroll Bar */
+
+.scrollLightbox {
+  width: 350px;
+  height: 75px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.font-size-6 {
+  font-size: 6pt;
+}
+
+.font-size-10 {
+  font-size: 10pt;
+}
+
+.font-size-13 {
+  font-size: 13pt;
+}
+
+.font-size-14 {
+  font-size: 14pt;
+}
+
+/* Color Settings */
+
+.colorBlack {
+  color: #000000;
+}
+
+.colorWhite {
+  color: #ffffff;
+}
+
+/* Billing Bullets */
+
+.FontSmall ul li {
+  list-style-type: disc;
+}
+
+/* Shopping Cart Circle */
+
+.shoppingCartNavBar li a i:first-of-type {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+/* Category Message Settings */
+
+.categoryPanel {
+  /* border-left: 5px solid #000000; */
+  max-width: 600px;
+  padding-left: 40px;
+  /*margin-left: auto;
+margin-right: auto;*/
+}
+
+/* Category Bullets */
+
+.categoryPanel ul li {
+  list-style-type: disc;
+}
+
+/* Category Title */
+
+.TPCategoryTitle {
+  color: #0B3648;
+  font-size: 10pt;
+  font-style: bold;
+  /* offset-x | offset-y | blur-radius | color */
+  /*text-shadow: 2px 2px 5px #000000;*/
+}
+
+/* Fixes row issues with Category List page */
+
+.panel-category-list ul li a h5 {
+  height: 50px;
+}
+
+/* Fixes row issues with Product List page */
+
+.panel-product-list ul li h3 {
+  font-size: 15px;
+}
+
+/* This counters the spacing issue on the product list page with <a> links */
+
+.aLinkSpacingFix p a {
+  padding: 0 !important;
+  display: inline !important;
+  text-decoration: none;
+}
+
+/* Search Bar */
+
+.customSearchBar {
+  float: right !important;
+  width: 65%;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*Gives items a list style*/
+
+.prod-desc-list-style ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+/*Footer CSS*/
+
+* {
+  margin: 0;
+}
+
+.flushFooter, .push {
+  height: 210px;
+  /* .push must be the same height as .footer */
+}
+
+.TopWrapper {
+  min-height: 100%;
+  margin: 0 auto -210px;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+.TopFooter {
+  font-size: 13pt;
+  margin-top: 0;
+  clear: both;
+  background-color: #dedede;
+  height: 150px;
+  width: 100%;
+  bottom: 0;
+  padding: 25px 0;
+}
+
+.TopxsFooter {
+  margin-top: 0;
+  clear: both;
+  background-color: #dedede;
+  height: 150px;
+  bottom: 0;
+  padding: 25px 0;
+}
+
+.TopxxsFooter {
+  margin-top: 0;
+  clear: both;
+  background-color: #dedede;
+  height: 250px;
+  bottom: 0;
+  padding: 25px 0;
+}
+
+.footLeft {
+  margin: 0;
+  padding: 0 3px 0 55px;
+  float: left;
+}
+
+.xsFootLeft {
+  margin: 0;
+  padding: 0 3px 0 25px;
+  float: left;
+  width: 100%;
+  max-width: 225px;
+}
+
+.xxsFootLeft {
+  margin: 0;
+  padding: 0 3px 0 20px;
+  float: left;
+  width: 100%;
+  max-width: 180px;
+}
+
+.footRight {
+  margin: 0;
+  padding-right: 25px;
+  float: right;
+}
+
+.xsFootRight {
+  margin: 0;
+  padding-right: 10px;
+  float: right;
+  font-size: 2vw;
+}
+
+.xxsFootRight {
+  margin: 0;
+  padding-right: 10px;
+  float: right;
+  font-size: 1.8vw;
+}
+
+.socialFooter {
+  margin-top: 0;
+  clear: both;
+  background-color: #000000;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  padding: 10px 0 0 60px;
+}
+
+/* Use this to transition icons */
+
+.iconTrans, .iconTrans:focus, .iconTrans:hover {
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.socialFooter>.text-left>.iconTrans {
+  color: #F7F7F7;
+  /*E04F4F*/
+}
+
+.socialFooter>.text-left>.iconTwitter:hover {
+  color: #00ACED !important;
+  /* 2B2B2B */
+}
+
+.socialFooter>.text-left>.iconFacebook:hover {
+  color: #3B5998 !important;
+  /* 2B2B2B */
+}
+
+.socialFooter>.text-left>.iconInstagram:hover {
+  color: #517fA4 !important;
+  /* 2B2B2B */
+}
+
+.socialFooter>.text-left>.iconLinkedIn:hover {
+  color: #007BB6 !important;
+  /* 2B2B2B */
+}
+
+.vertIcon {
+  padding-left: 5px;
+}
+
+/* Theme CSS Edits */
+
+/* Background Color */
+
+body {
+  background-color: #F7F7F7;
+}
+
+body {
+  color: #333333;
+}
+
+body a {
+  color: #E04F4F;
+}
+
+/* Change Shopping Cart Indicator Number Color */
+
+.badge {
+  color: #FFFFFF;
+}
+
+.navbar-nav li.dropdown li>a {
+  color: #333333;
+}
+
+.navbar .container .navbar-nav.pull-right li a i:first-of-type {
+  border-color: #FFFFFF;
+}
+
+.badge {
+  background-color: undefined;
+}
+
+.container .navbar-nav li a {
+  color: #FFFFFF;
+}
+
+.container .navbar-nav li.active>a {
+  color: undefined;
+}
+
+.dropdown-mega, .navbar-default {
+  border-color: ;
+}
+
+.text-primary {
+  color: #000000;
+}
+
+.text-info {
+  color: #31708F;
+}
+
+.btn-primary {
+  background-color: #0B3648;
+}
+
+.btn-primary, .btn-primary:hover {
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  border-color: #081B24;
+}
+
+.btn-primary:hover {
+  background-color: #051118;
+}
+
+.btn-default {
+  background-color: #FFFFFF;
+}
+
+.btn-default, .btn-default:hover {
+  color: #333333;
+}
+
+.btn-default {
+  border-color: #CCCCCC;
+}
+
+.btn-default:hover {
+  background-color: #EBEBEB;
+}
+
+.btn-info {
+  background-color: #5BC0DE;
+}
+
+.btn-info, .btn-info:hover {
+  color: #FFFFFF;
+}
+
+.btn-info {
+  border-color: #46B8DA;
+}
+
+.btn-info:hover {
+  background-color: #39B3D7;
+}
+
+.btn-success {
+  background-color: #5CB85C;
+}
+
+.btn-success, .btn-success:hover {
+  color: #FFFFFF;
+}
+
+.btn-success {
+  border-color: #4CAE4C;
+}
+
+.btn-success:hover {
+  background-color: #00AB41;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+}
+
+.btn-warning, .btn-warning:hover {
+  color: #FFFFFF;
+}
+
+.btn-warning {
+  border-color: #EEA236;
+}
+
+.btn-warning:hover {
+  background-color: #ED9C28;
+}
+
+.btn-danger {
+  background-color: #E04F4F;
+  /*D9534F*/
+}
+
+.btn-danger, .btn-danger:hover {
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  border-color: #D43F3A;
+}
+
+.btn-danger:hover {
+  background-color: #D2322D;
+}
+
+.panel-default .panel-heading .panel-title {
+  background-color: #F5F5F5;
+}
+
+.panel-default .panel-heading .panel-title {
+  color: #333333;
+}
+
+.panel {
+  background-color: #FFFFFF;
+}
+
+.panel-footer {
+  background-color: #F5F5F5;
+}
+
+.panel-category-list .well {
+  background-color: #FFFFFF;
+}
+
+.panel-category-list .well h5 {
+  color: #333333;
+}
+
+.panel-category-list .well {
+  border-color: #F7F7F7;
+}
+
+.panel-product-list .well {
+  background-color: #FFFFFF;
+}
+
+.panel-product-list .well {
+  color: #333333;
+}
+
+.panel-product-list .well {
+  border-color: #F7F7F7;
+}

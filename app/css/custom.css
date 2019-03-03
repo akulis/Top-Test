@@ -134,6 +134,11 @@
 }
 
 /* Drop down font color */
+.navbar-nav li.dropdown li>a {
+  color: #000000;
+}
+
+/* Drop down hover font color */
 .navbar-nav li.dropdown li>a:hover {
   color: #ffffff;
 }

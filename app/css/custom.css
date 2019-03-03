@@ -6,6 +6,7 @@
   margin-left: auto;
   padding-top: 15px;
 }
+
 /* Jumbo Header Text */
 .jumboHeaderText {
   padding-top: 20px;
@@ -13,35 +14,42 @@
   margin: 0 auto;
   color: #ffffff;
 }
+
 /* Jumbotron settings */
 .jumbotron {
   background-color: #FFFFFF;
 }
+
 /* Navbar Logo */
 .navLogo {
   max-width: 100%;
   max-height: 40px;
 }
+
 /* Banner Logo */
 .bannerLogo {
   max-width: 100%;
   max-height: 250px;
 }
+
 /* Footer Logo */
 .footerLogo {
   max-width: 100%;
   max-height: 100px;
 }
+
 /* Alters image size on main product page - overrides same class in bootstrap-451.css */
 .product-image-large {
   margin: 0 auto;
   max-height: 400px;
   max-width: 100%;
 }
+
 /* Home message text bullets */
 .homeMessageBullets ul li {
   list-style-type: disc;
 }
+
 /*.HomeMessage {
   text-align: center;
   font-size: 14pt;
@@ -62,57 +70,70 @@
 .navbar-default {
   background-color: #C3002F;
 }
+
 /* Highlight Colors - Update These */
 .container .navbar-nav li.active a:hover {
   background-color: #000000;
 }
+
 .container .navbar-nav li.active a:focus {
   background-color: #000000;
 }
-.navbar-default .navbar-nav .open > a {
+
+.navbar-default .navbar-nav .open>a {
   background-color: #000000;
 }
-.navbar-default .navbar-nav .open > a:hover {
+
+.navbar-default .navbar-nav .open>a:hover {
   background-color: #000000;
 }
-.navbar-default .navbar-nav .open > a:focus {
+
+.navbar-default .navbar-nav .open>a:focus {
   background-color: #000000;
 }
-.navbar-nav li.dropdown li > a:hover {
+
+.navbar-nav li.dropdown li>a:hover {
   background-color: #000000;
 }
-.navbar-nav li.dropdown li > a:focus {
+
+.navbar-nav li.dropdown li>a:focus {
   background-color: #000000;
 }
+
 .navbar .container .navbar-nav li.active .fa-caret-down {
   color: #000000;
 }
-.container .navbar-nav li.active > a {
+
+.container .navbar-nav li.active>a {
   background-color: #000000;
 }
-/* End match color here */
 
+/* End match color here */
 /* Change Panel Heading Color */
 .panel-primary .panel-heading .panel-title {
   background-color: #000000;
 }
+
 /* Change Panel Heading Font Color */
 .panel-primary .panel-heading .panel-title {
   color: #ffffff;
 }
+
 /* Navbar text when highlighted */
 .container .navbar-nav li.active a:hover,
-.container .navbar-nav li.active > a,
+.container .navbar-nav li.active>a,
 .container .navbar-nav li.active a:focus,
-.navbar-default .navbar-nav .open > a:focus {
+.navbar-default .navbar-nav .open>a:focus {
   color: #ffffff;
 }
+
 /* Navbar Default Font Color */
-.navbar-default .navbar-nav .open > a:hover,
-.navbar-default .navbar-nav .open > a {
+.navbar-default .navbar-nav .open>a:hover,
+.navbar-default .navbar-nav .open>a {
   color: #ffffff;
 }
+
 /* Drop down font color */
-.navbar-nav li.dropdown li > a:hover {
+.navbar-nav li.dropdown li>a:hover {
   color: #ffffff;
 }

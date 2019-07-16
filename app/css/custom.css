@@ -127,6 +127,11 @@
   color: #ffffff;
 }
 
+/* Changes navbar font color when not in use */
+.container .navbar-nav li a {
+  color: #ffffff;
+}
+
 /* Navbar Default Font Color */
 .navbar-default .navbar-nav .open>a:hover,
 .navbar-default .navbar-nav .open>a {

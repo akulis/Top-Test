@@ -1,25 +1,21 @@
 /* Checkout Button Text */
-
 .checkoutButtonText {
   /*font-size: 10px;*/
   font-size: 1.2vh;
 }
 
 /* Fixed Product Image */
-
 .fixedProductImage {
   position: fixed !important;
 }
 
 /* Jumbo Header Home Page*/
-
 .jumboHeader {
   text-align: center;
   padding-top: 20px;
 }
 
 /* Spending Account Nav Option */
-
 .spendingaccounts {
   padding: 15px 8px;
   color: #ffffff;
@@ -37,7 +33,6 @@
 }
 
 /* Light Scroll Bar */
-
 .scrollLightbox {
   width: 350px;
   height: 75px;
@@ -62,7 +57,6 @@
 }
 
 /* Color Settings */
-
 .colorBlack {
   color: #000000;
 }
@@ -72,13 +66,11 @@
 }
 
 /* Billing Bullets */
-
 .FontSmall ul li {
   list-style-type: disc;
 }
 
 /* Shopping Cart Circle */
-
 .shoppingCartNavBar li a i:first-of-type {
   border-radius: 50%;
   border: 1px solid #fff;
@@ -88,7 +80,6 @@
 }
 
 /* Category Message Settings */
-
 .categoryPanel {
   /* border-left: 5px solid #000000; */
   max-width: 600px;
@@ -98,13 +89,11 @@ margin-right: auto;*/
 }
 
 /* Category Bullets */
-
 .categoryPanel ul li {
   list-style-type: disc;
 }
 
 /* Category Title */
-
 .TPCategoryTitle {
   color: #0B3648;
   font-size: 10pt;
@@ -114,19 +103,16 @@ margin-right: auto;*/
 }
 
 /* Fixes row issues with Category List page */
-
 .panel-category-list ul li a h5 {
   height: 50px;
 }
 
 /* Fixes row issues with Product List page */
-
 .panel-product-list ul li h3 {
   font-size: 15px;
 }
 
 /* This counters the spacing issue on the product list page with <a> links */
-
 .aLinkSpacingFix p a {
   padding: 0 !important;
   display: inline !important;
@@ -134,7 +120,6 @@ margin-right: auto;*/
 }
 
 /* Search Bar */
-
 .customSearchBar {
   float: right !important;
   width: 65%;
@@ -144,14 +129,12 @@ margin-right: auto;*/
 }
 
 /*Gives items a list style*/
-
 .prod-desc-list-style ul {
   list-style-type: disc;
   margin-left: 50px;
 }
 
 /*Footer CSS*/
-
 * {
   margin: 0;
 }
@@ -249,7 +232,6 @@ margin-right: auto;*/
 }
 
 /* Use this to transition icons */
-
 .iconTrans, .iconTrans:focus, .iconTrans:hover {
   -webkit-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
@@ -288,9 +270,7 @@ margin-right: auto;*/
 }
 
 /* Theme CSS Edits */
-
 /* Background Color */
-
 body {
   background-color: #F7F7F7;
 }
@@ -304,7 +284,6 @@ body a {
 }
 
 /* Change Shopping Cart Indicator Number Color */
-
 .badge {
   color: #FFFFFF;
 }
@@ -319,10 +298,6 @@ body a {
 
 .badge {
   background-color: undefined;
-}
-
-.container .navbar-nav li a {
-  color: #FFFFFF;
 }
 
 .container .navbar-nav li.active>a {

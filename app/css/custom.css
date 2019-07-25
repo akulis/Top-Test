@@ -9,15 +9,16 @@
 
 /* Jumbo Header Text */
 .jumboHeaderText {
-  padding-top: 20px;
-  width: 600px;
-  margin: 0 auto;
+  /* width: 600px;
+  margin: 0 auto; */
   color: #ffffff;
 }
 
 /* Jumbotron settings */
 .jumbotron {
   background-color: #FFFFFF;
+  /* set to zero to stretch banner to edge */
+  padding: 0px;
 }
 
 /* Navbar Logo */

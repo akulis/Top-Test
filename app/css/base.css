@@ -12,6 +12,7 @@
 /* Jumbo Header Home Page*/
 .jumboHeader {
   text-align: center;
+  /* This needs to be centered to keep banner image centered */
   padding-top: 20px;
 }
 

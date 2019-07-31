@@ -1,7 +1,22 @@
-/* Checkout Button Text */
-.checkoutButtonText {
-  /*font-size: 10px;*/
-  font-size: 1.2vh;
+/* Check Out Buttons */
+.checkoutShopButton {
+  font-size: 1.8vmax;
+  text-transform: uppercase;
+}
+
+.checkoutCancelButton {
+  font-size: 1.8vmax;
+  text-transform: uppercase;
+}
+
+.checkoutSaveButton {
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+}
+
+.checkoutCheckOutButton {
+  font-size: 1.5vmax;
+  text-transform: uppercase;
 }
 
 /* Fixed Product Image */

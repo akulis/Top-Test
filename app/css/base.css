@@ -28,7 +28,7 @@
 .jumboHeader {
   text-align: center;
   /* This needs to be centered to keep banner image centered */
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* Spending Account Nav Option */

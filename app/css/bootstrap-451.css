@@ -4392,8 +4392,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  /* Change Shopping Cart Indicator Background - $ak */
-  background-color: #000000;
+  background-color: #0c2a3a;
   border-radius: 10px;
 }
 .badge:empty {

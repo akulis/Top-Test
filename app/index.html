@@ -2,11 +2,25 @@
 <html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
 
 <head>
-  <!-- Set sub-folder here if different than base -->
-  <base href="/store/" />
-  <!-- Set four51IsAnonUser to true if anonymous or false if password is needed -->
-  <script>
-    var four51IsAnonUser = true;
+  <!-- enable this script for site down message, disable for site active, script begin -->
+  <!-- <script type="text/javascript">
+    { window.location.replace("sitedownSplashPage.html"); }
+  </script> -->
+  <!-- site down script end -->
+  <!--baseTagToken-->
+  <!--headscriptToken-->
+  <style id="antiClickjack">
+    body {
+      display: none !important;
+    }
+  </style>
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+    }
   </script>
   <!-- Set Window/Tab title here -->
   <title>Top Promotions Webstore</title>
@@ -36,92 +50,28 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 
 <body ng-cloak ng-class="ng-cloak">
-  <div class="TopWrapper">
-    <section>
-      <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
-        <login />
+  <section>
+    <section ng-hide="Four51User.isAuthenticated() || isAnon" class="container">
+      <login />
+    </section>
+    <section ng-if="Four51User.isAuthenticated()" id="content">
+      <section class="hidden-print">
+        <navigation />
       </section>
-      <section ng-if="Four51User.isAuthenticated()" id="content">
-        <section class="hidden-print">
-          <navigation />
-        </section>
-        <section class="hidden-print">
-          <branding />
-        </section>
-        <section class="container-view">
-          <ng-view autoscroll />
-        </section>
+      <section class="hidden-print">
+        <branding />
+      </section>
+      <section class="container-view">
+        <ng-view autoscroll />
+      </section>
+      <section class="hidden-print">
+        <fixedfooter />
       </section>
     </section>
-    <div class="push"></div>
-    <footer>
-      <div class="TopFooter visible-sm visible-md visible-lg">
-        <div class="footLeft">
-          <a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png"
-              alt="Get high quality promotional products, apparel and items from Top Promotions." /></a>
-        </div>
-        <div class="footRight">
-          <p>Contact Us</p>
-          <p>
-            <i class="fa fa-phone"></i> 1.800.344.2968
-          </p>
-          <p>
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a>
-          </p>
-        </div>
-      </div>
-      <div class="TopxsFooter visible-xs">
-        <div class="xsFootLeft">
-          <a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png"
-              alt="Get high quality promotional products, apparel and items from Top Promotions." /></a>
-        </div>
-        <div class="xsFootRight">
-          <p>Contact Us</p>
-          <p>
-            <i class="fa fa-phone"></i> 1.800.344.2968
-          </p>
-          <p>
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a>
-          </p>
-        </div>
-      </div>
-      <div class="TopxxsFooter visible-xxs">
-        <div class="xxsFootLeft">
-          <a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png"
-              alt="Get high quality promotional products, apparel and items from Top Promotions." /></a>
-          <br>
-          <br>
-          <p>Contact Us</p>
-          <p>1.800.344.2968</p>
-          <p>
-            <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a>
-          </p>
-        </div>
-        <!--<div class="xxsFootRight"> <p>Contact Us</p> <p><i class="fa fa-phone"></i> 1.800.344.2968</p> <p><i class="fa fa-envelope"></i> <a
-          href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a></p> </div> -->
-      </div>
-      <div class="socialFooter">
-        <!--<section class="ng-scope"> <div class="container"> -->
-        <p class="text-left">
-          <!-- <a class="pull-left" href="" style="padding-top:10px;">Terms</a> -->
-          <!-- <a class="vertIcon iconTrans iconTwitter" target="_blank" href=""><i class="fa fa-twitter-square fa-3x"></i></a> -->
-          <a class="vertIcon iconTrans iconFacebook" target="_blank" href="https://www.facebook.com/Toppromotions">
-            <i class="fa fa-facebook-square fa-3x"></i>
-          </a>
-          <!-- <a class="vertIcon" target="_blank" href="https://plus.google.com/b/101151839970654395169/101151839970654395169"><i class="fa fa-google-plus-square fa-3x"></i></a> -->
-          <!-- <a class="vertIcon iconTrans iconInstagram" target="_blank" href=""><i class="fa fa-instagram fa-3x"></i></a> -->
-          <a class="vertIcon iconTrans iconLinkedIn" target="_blank" href="https://www.linkedin.com/company/top-promotions">
-            <i class="fa fa-linkedin-square fa-3x "></i>
-          </a>
-        </p>
-        <!-- </div> </section> -->
-      </div>
-    </footer>
-  </div>
+  </section>
   <!-- Add for Back to Top icon -->
   <backtotop offsetbottom="30" offsetright="30" duration="200"></backtotop>
+
   <!--<script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script>-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" data-group="cdn"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js" data-group="cdn"></script>
@@ -133,6 +83,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js" data-group="cdn"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-loader.min.js" data-group="cdn"></script>
   <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js" data-group="cdn"></script>
+
   <script src="lib/store.js" data-group="resources"></script>
   <script src="lib/angular_ui/ui-utils.min.js" data-group="resources"></script>
   <script src="lib/angular_ui/ui-bootstrap-tpls-0.10.0.min.js" data-group="resources"></script>
@@ -265,6 +216,8 @@
   <script src="lib/oc/backToTop.js" data-group="resources"></script>
   <script src="lib/oc/sameAsShippingCheckbox.js" data-group="resources"></script>
   <script src="lib/oc/minicart.js" data-group="resources"></script>
+  <script src="lib/oc/fixedFooter.js" data-group="resources"></script>
+  <script src="lib/oc/checkoutItemSummary.js" data-group="resources"></script>
 </body>
 <!-- <![endif]-->
 

@@ -6474,7 +6474,7 @@ button::-moz-focus-inner {
   padding: 15px;
   cursor: pointer;
 }
-.nav.visible-sm.visible-xs.visible-xxs {
+.nav.visible-sm.visible-xs {
   margin-bottom: 10px;
 }
 .navbar .nav a {

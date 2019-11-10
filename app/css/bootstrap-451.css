@@ -5869,13 +5869,30 @@ ul:after,
 @-ms-viewport {
   width: device-width;
 }
+.visible-xxs,
 .visible-xs,
 .visible-sm,
 .visible-md,
 .visible-lg {
   display: none !important;
 }
-@media (max-width: 767px) {
+/* Updated the min-width to work with .visible-xxs - $ak */
+@media (max-width: 719px) {
+  .visible-xxs {
+    display: block !important;
+  }
+  table.visible-xxs {
+    display: table;
+  }
+  tr.visible-xxs {
+    display: table-row !important;
+  }
+  th.visible-xxs,
+  td.visible-xxs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 720px) and (max-width: 767px) {
   .visible-xs {
     display: block !important;
   }
@@ -6362,7 +6379,7 @@ button::-moz-focus-inner {
 }
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #154964;
+  color: #ffffff;
 }
 .navbar .container .navbar-nav.pull-left li a,
 .navbar .container-view .navbar-nav.pull-left li a {
@@ -6474,7 +6491,7 @@ button::-moz-focus-inner {
   padding: 15px;
   cursor: pointer;
 }
-.nav.visible-sm.visible-xs {
+.nav.visible-sm.visible-xs.visible-xxs {
   margin-bottom: 10px;
 }
 .navbar .nav a {

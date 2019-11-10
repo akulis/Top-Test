@@ -312,6 +312,11 @@ body a {
   color: #E04F4F;
 }
 
+/* Change Shopping Cart Indicator Number Color */
+.badge {
+  color: #FFFFFF;
+}
+
 /* Navbar Color & Border Edit */
 .navbar {
   position: relative;
@@ -332,12 +337,9 @@ body a {
 .navbar .container .navbar-nav.pull-right li a i:first-of-type {
   border-color: #FFFFFF;
 }
-.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
-.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
-  color: #ffffff;
-}
-.nav.visible-sm.visible-xs.visible-xxs {
-  margin-bottom: 10px;
+
+.badge {
+  background-color: undefined;
 }
 
 .container .navbar-nav li.active>a {
@@ -491,42 +493,4 @@ body a {
 
 .panel-product-list .well {
   border-color: #F7F7F7;
-}
-.visible-xxs,
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
-  display: none !important;
-}
-/* Updated the min-width to work with .visible-xxs */
-@media (max-width: 719px) {
-  .visible-xxs {
-    display: block !important;
-  }
-  table.visible-xxs {
-    display: table;
-  }
-  tr.visible-xxs {
-    display: table-row !important;
-  }
-  th.visible-xxs,
-  td.visible-xxs {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 720px) and (max-width: 767px) {
-  .visible-xs {
-    display: block !important;
-  }
-  table.visible-xs {
-    display: table;
-  }
-  tr.visible-xs {
-    display: table-row !important;
-  }
-  th.visible-xs,
-  td.visible-xs {
-    display: table-cell !important;
-  }
 }

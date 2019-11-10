@@ -24,6 +24,12 @@
   position: fixed !important;
 }
 
+/*Edit Jumbrotron width */
+.jumbotron {
+  margin: 45px 0px -45px;
+  display: none;
+}
+
 /* Jumbo Header Home Page*/
 .jumboHeader {
   text-align: center;

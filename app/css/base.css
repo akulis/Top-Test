@@ -109,6 +109,13 @@
   background-color: #000000;
   border-radius: 10px;
 }
+/* Change Shopping Cart Indicator Number Color */
+/*.badge {
+  color: #FFFFFF;
+}
+.badge {
+  background-color: undefined;
+}*/
 /* Added to fix Checkout Button Text resizing issues - need to add to custom.css eventually */
 .checkoutButtonText {
   font-size: 2vmin !important;
@@ -312,11 +319,6 @@ body a {
   color: #E04F4F;
 }
 
-/* Change Shopping Cart Indicator Number Color */
-.badge {
-  color: #FFFFFF;
-}
-
 /* Navbar Color & Border Edit */
 .navbar {
   position: relative;
@@ -340,9 +342,6 @@ body a {
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
   color: #ffffff;
-}
-.badge {
-  background-color: undefined;
 }
 
 .container .navbar-nav li.active>a {

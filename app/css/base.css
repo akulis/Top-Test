@@ -300,6 +300,13 @@ body a {
 }
 
 /* Navbar Color & Border Edit */
+.navbar {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 0;
+  border: none;
+}
+
 .navbar-default {
   background-color: none;
   border-color: none;

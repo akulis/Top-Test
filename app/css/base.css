@@ -299,6 +299,12 @@ body a {
   color: #FFFFFF;
 }
 
+/* Navbar Color & Border Edit - $ak */
+.navbar-default {
+  background-color: none;
+  border-color: none;
+}
+
 .navbar-nav li.dropdown li>a {
   color: #333333;
 }

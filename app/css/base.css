@@ -337,7 +337,10 @@ body a {
 .navbar .container .navbar-nav.pull-right li a i:first-of-type {
   border-color: #FFFFFF;
 }
-
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+  color: #ffffff;
+}
 .badge {
   background-color: undefined;
 }

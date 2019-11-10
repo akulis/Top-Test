@@ -94,7 +94,10 @@
   padding: 10px;
   margin-top: -10px;
 }
-
+/* Added to fix Checkout Button Text resizing issues - need to add to custom.css eventually */
+.checkoutButtonText {
+  font-size: 2vmin !important;
+}
 /* Category Message Settings */
 .categoryPanel {
   /* border-left: 5px solid #000000; */

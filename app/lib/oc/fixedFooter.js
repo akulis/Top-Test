@@ -27,7 +27,7 @@ function fixedfooter() {
       '<div class="footFoot">',
       '<div class="TopFooter visible-sm visible-md visible-lg">',
       '<div class="footLeft">',
-      '<a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png" alt = "Get high quality promotional products, apparel and items from Top Promotions." / > < /a>',
+      '<a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png" alt = "Get high quality promotional products, apparel and items from Top Promotions." / > </a>',
       '</div>',
       '<div class="footRight">',
       '<p>Contact Us</p>',

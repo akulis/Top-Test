@@ -3979,11 +3979,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
-/* Navbar Color & Border Edit - $ak */
-/*.navbar-default {
-  background-color: #002A45;
-  border-color: #0069AA;
-}*/
+.navbar-default {
+  background-color: #50acdb;
+  border-color: #359fd5;
+}
 .navbar-default .navbar-brand {
   color: #ffffff;
 }

@@ -19,6 +19,7 @@ function fixedfooter() {
       '<style>',
       'body {margin-bottom:0;}',
       '.footFoot {margin-top:400px;}',
+      '.footerLogo {max-width: 100px; max-height: 100%;}'
       //'.fixed-footer-bottom .pull-left a {font-size:2em; margin-right:0.5em;}',
       '.copyright-view {margin:0; padding-bottom:150px !important;}',
       //'@media (max-width:767px) { .copyright-view {height: 300px !important; margin-top:25px; padding-top:0;} }',
@@ -27,7 +28,7 @@ function fixedfooter() {
       '<div class="footFoot">',
       '<div class="TopFooter visible-sm visible-md visible-lg">',
       '<div class="footLeft">',
-      '<a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png" alt = "Get high quality promotional products, apparel and items from Top Promotions." / > </a>',
+      '<a href="https://www.toppromotions.com/" target="_blank"><img class="footerLogo" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Full-Logo-onWhite-200.png" alt="Get high quality promotional products, apparel and items from Top Promotions." /> </a>',
       '</div>',
       '<div class="footRight">',
       '<p>Contact Us</p>',

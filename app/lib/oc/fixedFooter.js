@@ -19,7 +19,7 @@ function fixedfooter() {
       '<style>',
       'body {margin-bottom:0;}',
       '.footFoot {margin-top:400px;}',
-      '.footerLogo {max-width: 100px; max-height: 100%;}'
+      '.footerLogo {max-width: 100px; max-height: 100%;}',
       //'.fixed-footer-bottom .pull-left a {font-size:2em; margin-right:0.5em;}',
       '.copyright-view {margin:0; padding-bottom:150px !important;}',
       //'@media (max-width:767px) { .copyright-view {height: 300px !important; margin-top:25px; padding-top:0;} }',

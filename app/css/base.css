@@ -508,7 +508,7 @@ body a {
   display: none !important;
 }
 /* Updated the min-width to work with .visible-xxs - $ak */
-@media (max-width: 719px) {
+/*@media (max-width: 719px) {
   .visible-xxs {
     display: block !important;
   }
@@ -537,4 +537,4 @@ body a {
   td.visible-xs {
     display: table-cell !important;
   }
-}
+}*/

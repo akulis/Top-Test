@@ -68,7 +68,10 @@ body {
   overflow: auto;
   white-space: nowrap;
 }
-
+/* Justify Paragraphs */
+.pJustify {
+  align: justify;
+}
 .font-size-6 {
   font-size: 6pt;
 }

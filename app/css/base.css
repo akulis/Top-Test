@@ -70,7 +70,7 @@ body {
 }
 /* Justify Paragraphs */
 .pJustify {
-  align: justify;
+  text-align: justify;
 }
 .font-size-6 {
   font-size: 6pt;

@@ -1,9 +1,7 @@
 angular.module("OrderCloud-FixedFooter", []);
 
-angular
-  .module("OrderCloud-FixedFooter")
-  .directive("fixedfooter", fixedfooter)
-  // .directive('orderbuttons', orderbuttons)
+angular.module("OrderCloud-FixedFooter").directive("fixedfooter", fixedfooter)
+// .directive('orderbuttons', orderbuttons)
   .controller("FixedFooterCtrl", FixedFooterCtrl);
 
 function fixedfooter() {
@@ -16,10 +14,7 @@ function fixedfooter() {
 
   function template() {
     return [
-      '<style>',
-      'body {margin-bottom:0;}',
-      '.footFoot {margin-top:400px;}',
-      '.footerLogo {max-width: 125px; max-height: 100%;}',
+      '<style>', 'body {margin-bottom:0;}', '.footFoot {margin-top:400px;}', '.footerLogo {max-width: 125px; max-height: 100%;}',
       //'.fixed-footer-bottom .pull-left a {font-size:2em; margin-right:0.5em;}',
       '.copyright-view {margin:0; padding-bottom:150px !important;}',
       //'@media (max-width:767px) { .copyright-view {height: 300px !important; margin-top:25px; padding-top:0;} }',
@@ -32,7 +27,7 @@ function fixedfooter() {
       '</div>',
       '<div class="footRight">',
       '<p>Contact Us</p>',
-      '<p><i class="fa fa-phone"></i> 1.800.344.2968</p>',
+      '<p><i class="fa fa-phone"></i> 1.608.826.6990</p>',
       '<p><i class="fa fa-envelope"></i>  <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a></p>',
       '</div>',
       '</div>',
@@ -42,7 +37,7 @@ function fixedfooter() {
       '</div>',
       '<div class="xsFootRight">',
       '<p>Contact Us</p>',
-      '<p><i class="fa fa-phone"></i> 1.800.344.2968</p>',
+      '<p><i class="fa fa-phone"></i> 1.608.826.6990</p>',
       '<p><i class="fa fa-envelope"></i>  <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a></p>',
       '</div>',
       '</div>',
@@ -52,7 +47,7 @@ function fixedfooter() {
       //'</div>',
       //'<div class="xxsFootRight">',
       //'<p>Contact Us</p>',
-      //'<p><i class="fa fa-phone"></i> 1.800.344.2968</p>',
+      //'<p><i class="fa fa-phone"></i> 1.608.826.6990</p>',
       //'<p><i class="fa fa-envelope"></i>  <a href="mailto:webservices@toppromotions.com?subject=Top%20Promotions%20Contact">webservices@toppromotions.com</a></p>',
       //'</div>',
       //'</div>',
@@ -122,18 +117,21 @@ function FixedFooterCtrl($scope, $location) {
   var d = new Date();
   $scope.year = d.getFullYear();
 
-  /*below functions from NavCtrl.js in case navigation is used in the footer*/
+  /* below functions from NavCtrl.js in case navigation is used in the footer */
   $scope.isActive = function(path) {
     var cur_path = $location.path().replace("/", "");
     var result = false;
 
     if (path instanceof Array) {
       angular.forEach(path, function(p) {
-        if (p == cur_path && !result) result = true;
-      });
+        if (p == cur_path && !result) 
+          result = true;
+        }
+      );
     } else {
-      if (cur_path == path) result = true;
-    }
+      if (cur_path == path) 
+        result = true;
+      }
     return result;
   };
 

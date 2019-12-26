@@ -18,22 +18,22 @@
   </style>
   <li ng-if="continue">
     <button type="button" class="btn btn-info" redirect="catalog">
-      <span class="hidden-xs hidden-xxs checkoutShopButton">{{'Continue Shopping' | r | xlat}}</span>
-      <span class="visible-xs visible-xxs checkoutShopButton">{{'Shop' | r | xlat}}</span>
+      <small class="hidden-xs hidden-xxs checkoutShopButton">{{'Continue Shopping' | r | xlat}}</small>
+      <small class="visible-xs visible-xxs checkoutShopButton">{{'Shop' | r | xlat}}</small>
     </button>
   </li>
   <li>
     <button class="btn btn-danger" ng-click="currentOrder.Status == 'AwaitingApproval' ? cancelEdit() : cancelOrder()">
-      <span class="hidden-xs hidden-xxs checkoutCancelButton" ng-show="currentOrder.Status != 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Order' | r) | xlat}}</span>
-      <span class="visible-xs visible-xxs checkoutCancelButton" ng-show="currentOrder.Status != 'AwaitingApproval'">{{'Cancel' | r | xlat}}</span>
-      <span class="checkoutCancelButton" ng-show="currentOrder.Status == 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Edit' | r) | xlat}}</span>
+      <small class="hidden-xs hidden-xxs checkoutCancelButton" ng-show="currentOrder.Status != 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Order' | r) | xlat}}</small>
+      <small class="visible-xs visible-xxs checkoutCancelButton" ng-show="currentOrder.Status != 'AwaitingApproval'">{{'Cancel' | r | xlat}}</small>
+      <small class="checkoutCancelButton" ng-show="currentOrder.Status == 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Edit' | r) | xlat}}</small>
     </button>
   </li>
   <li>
     <button class="btn btn-primary" ng-click="saveChanges()">
       <loadingindicator ng-show="displayLoadingIndicator" />
-      <span class="hidden-xs hidden-xxs checkoutSaveButton">{{('Save' | r) + ' ' + ('Order' | r) | xlat}}</span>
-      <span class="visible-xs visible-xxs checkoutSaveButton">{{'Save' | r | xlat}}</span>
+      <small class="hidden-xs hidden-xxs checkoutSaveButton">{{('Save' | r) + ' ' + ('Order' | r) | xlat}}</small>
+      <small class="visible-xs visible-xxs checkoutSaveButton">{{'Save' | r | xlat}}</small>
     </button>
   </li>
   <li>

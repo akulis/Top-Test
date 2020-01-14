@@ -10,6 +10,10 @@ body {
   font-size: 1.8vmax;
   text-transform: uppercase;
 }
+/* Center Text */
+.centerText {
+  text-align: center;
+}
 
 .checkoutCancelButton {
   font-size: 1.8vmax;

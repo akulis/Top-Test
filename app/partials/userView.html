@@ -79,15 +79,15 @@
   </div>
   <form ng-show="user.Permissions.contains('ViewSelfAdmin')" name="user_form" ng-submit="save()">
     <!-- Adds text before "Create Account" -->
-    <div class="panel panel-default" id="user_form">
+    <div class="panel panel-default" id="user_form" ng-show="user.Type == 'TempCustomer'">
       <div class="panel-heading">
         <h3 class="panel-title">{{('Please' | r) + ' ' + ('Read' | r) | xlat}}</h3>
       </div>
       <div class="panel-body">
         <div class="col-md-8 col-md-offset-2">
-          <p><strong>Please note that this shopping system validates usernames across all stores (not just [[FromCompany]]) so when creating a new account, you may receive a message that the username you selected already exists and to choose
-              another.</strong></p>
-          <p><strong>Returning Users, if you have forgotten your User ID or Password, use the Forgot User ID/Forgot Password link to re-set. If you have any questions, please contact Customer Service at 608-826-6990.</strong></p>
+          <h4>When creating a new account, you may receive a message that the username you selected already exists and to choose another. Please note that this shopping system validates usernames across all stores, not just the {{user.Company.Name}}
+            Webstore. We recommend using your company/personal email address as your username so it is unique.</h4>
+          <h4>Returning Users, if you have forgotten your User ID or Password, use the Forgot User ID/Forgot Password link to re-set. If you have any questions, please contact Customer Service at 608-826-6990.</h4>
         </div>
       </div>
     </div>

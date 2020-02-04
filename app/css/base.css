@@ -5,11 +5,13 @@ body {
   color: #333333;
   background-color: #f0f0f0;
 }
+
 /* Check Out Buttons */
 .checkoutShopButton {
   font-size: 1.8vmax;
   text-transform: uppercase;
 }
+
 /* Center Text */
 .centerText {
   text-align: center;
@@ -72,10 +74,12 @@ body {
   overflow: auto;
   white-space: nowrap;
 }
+
 /* Justify Paragraphs */
 .pJustify {
   text-align: justify;
 }
+
 .font-size-6 {
   font-size: 6pt;
 }
@@ -101,6 +105,10 @@ body {
   color: #ffffff;
 }
 
+.colorRed {
+  color: #ff0000;
+}
+
 /* Billing Bullets */
 .FontSmall ul li {
   list-style-type: disc;
@@ -114,6 +122,7 @@ body {
   padding: 10px;
   margin-top: -10px;
 }
+
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -134,6 +143,7 @@ body {
 .checkoutButtonText {
   font-size: 2vmin !important;
 }
+
 /* Category Message Settings */
 .categoryPanel {
   /* border-left: 5px solid #000000; */
@@ -356,13 +366,16 @@ body a {
 .navbar .container .navbar-nav.pull-right li a i:first-of-type {
   border-color: #FFFFFF;
 }
+
 .navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
 .navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
   color: #ffffff;
 }
+
 .nav.visible-sm.visible-xs.visible-xxs {
   margin-bottom: 10px;
 }
+
 .container .navbar-nav li.active>a {
   color: undefined;
 }
@@ -515,35 +528,44 @@ body a {
 .panel-product-list .well {
   border-color: #F7F7F7;
 }
+
 .visible-xxs {
   display: none !important;
 }
+
 /* Updated the min-width to work with .visible-xxs - $ak */
 @media (max-width: 719px) {
   .visible-xxs {
     display: block !important;
   }
+
   table.visible-xxs {
     display: table;
   }
+
   tr.visible-xxs {
     display: table-row !important;
   }
+
   th.visible-xxs,
   td.visible-xxs {
     display: table-cell !important;
   }
 }
+
 @media (min-width: 720px) and (max-width: 767px) {
   .visible-xs {
     display: block !important;
   }
+
   table.visible-xs {
     display: table;
   }
+
   tr.visible-xs {
     display: table-row !important;
   }
+
   th.visible-xs,
   td.visible-xs {
     display: table-cell !important;

@@ -114,6 +114,18 @@ body {
   background-color: #e04f4f;
 }
 
+.panel-primary .alert-message .panel-title {
+  color: #ffffff;
+}
+
+.panel .alert-message .panel-title {
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  padding: 25px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Billing Bullets */
 .FontSmall ul li {
   list-style-type: disc;

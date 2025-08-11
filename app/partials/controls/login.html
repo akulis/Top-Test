@@ -52,14 +52,14 @@
               </div>
               <div>
                 <label ng-show="credentials.ConfirmPassword">Confirm {{'Password' | r}}</label>
-                <input autocomplete="off" class="form-control" ng-required="PasswordReset" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword" placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
+                                <input autocomplete="off" class="form-control" ng-required="PasswordReset" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword"  placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
                 <i class="fa fa-lock"></i>
                 <inlineerror ng-show="login_form.confirm_password.$error.match" title="{{'Password' | r}} do not match!" />
               </div>
             </div>
             <div>
-              <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please
-                provide your email address and your log on information will be emailed to you immediately.
+                            <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">
+                                If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please provide your email address and your log on information will be emailed to you immediately.
               </p>
               <div class="view-form-icon" ng-show="showEmailHelp">
                 <div>
@@ -83,7 +83,7 @@
                 </div>
                 <div>
                   <label ng-show="credentials.ConfirmPassword">Confirm {{'Password' | r}}</label>
-                  <input autocomplete="off" class="form-control" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword" placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
+                                    <input autocomplete="off" class="form-control" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword"  placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
                   <i class="fa fa-lock"></i>
                   <inlineerror ng-show="login_form.confirm_password.$error.match" title="{{'Password' | r}} do not match!" />
                 </div>
@@ -98,13 +98,13 @@
                 </div>
                 <div>
                   <label ng-show="credentials.ConfirmPassword">Confirm {{'Password' | r}}</label>
-                  <input autocomplete="off" class="form-control" ng-required="PasswordReset" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword" placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
+                                    <input autocomplete="off" class="form-control" ng-required="PasswordReset" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword"  placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" />
                   <i class="fa fa-lock"></i>
                   <inlineerror ng-show="login_form.confirm_password.$error.match" title="{{'Password' | r}} do not match!" />
                 </div>
               </div>
             </div>
-            <!-- Submit Button -->
+            <!-- Submit Button - moved buttons to bottem $ak -->
             <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block" id="451_btn_login" type="submit" value="{{buttonText}}" />
             <!-- Forgotten password/Return to log in Buttons -->
             <div>

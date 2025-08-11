@@ -1,10 +1,11 @@
 angular.module('OrderCloud-CheckoutItemSummary', []);
 
 angular.module('OrderCloud-CheckoutItemSummary')
-  .directive('checkoutitemsummary', checkoutitemsummary);
+    .directive('checkoutitemsummary', checkoutitemsummary)
+;
 
 function checkoutitemsummary() {
-  var directive = {
+    var directive =  {
     restrict: 'E',
     template: template
   };

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" ng-app="451order" ng-controller="Four51Ctrl">
-
 <head>
   <!-- enable this script for site down message, disable for site active, script begin -->
   <!-- <script type="text/javascript">
@@ -9,11 +8,7 @@
   <!-- site down script end -->
   <!--baseTagToken-->
   <!--headscriptToken-->
-  <style id="antiClickjack">
-    body {
-      display: none !important;
-    }
-  </style>
+    <style id="antiClickjack">body{display:none !important;}</style>
   <script type="text/javascript">
     if (self === top) {
       var antiClickjack = document.getElementById("antiClickjack");
@@ -60,7 +55,6 @@
     <!--<![endif]-->
 </head>
 <!--[if (gte IE 9)|!(IE)]><!-->
-
 <body ng-cloak ng-class="ng-cloak">
   <section>
     <section ng-hide="Four51User.isAuthenticated() || (isAnon && Four51User.isAuthenticated())" class="container">
@@ -82,7 +76,7 @@
     </section>
   </section>
 
-  <!-- Add for Back to Top icon -->
+  <!-- Add for Back to Top icon $ak -->
   <backtotop offsetbottom="30" offsetright="30" duration="200"></backtotop>
 
   <!--<script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="bfec7bded14d43a7ace2697594e1369d"></script>-->
@@ -183,7 +177,9 @@
   <script src="js/services/XLATTables.js" data-group="source"></script>
   <script src="js/services/XLATService.js" data-group="source"></script>
   <script src="js/services/kitService.js" data-group="source"></script>
+
   <script src="js/factories/fileReader.js" data-group="source"></script>
+
   <script src="js/directives/match.js" data-group="source"></script>
   <script src="js/directives/buttonredirect.js" data-group="source"></script>
   <script src="js/directives/product.js" data-group="source"></script>
@@ -239,5 +235,4 @@
   <script src="lib/oc/checkoutItemSummary.js" data-group="resources"></script>
 </body>
 <!-- <![endif]-->
-
 </html>

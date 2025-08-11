@@ -1,5 +1,5 @@
 <header class="header navbar navbar-inner">
-  <nav offset='100000' class="navbar navbar-default navbar-fixed-top" role="navigation" headroom>
+  <nav offset='100000' class="navbar navbar-default navbar-fixed-top" role="navigation" headroom> <!--Removed tolerance and adjusted offset $ak -->
     <section>
       <div class="container">
         <ul class="nav navbar-nav pull-left">
@@ -10,7 +10,7 @@
             </a>
           </li>
           <!-- Navbar Menu Icon -->
-          <!-- This icon is for the wider screen -->
+          <!-- This icon is for the wider screen $ak -->
           <li id="" class="back animated fadeInLeft hidden-xs">
             <a id="451qa_home_link" class="" style="padding: 10px 10px 0px 10px; text-align: center;" href="catalog" ng-show="Four51User.isAuthenticated()">
               <img class="image-responsive navLogo" ng-src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Logo-onRed-50.png" src="https://www.four51.com/Themes/Custom/cdde0792-3f36-497d-88eb-12c282cba5d2/Top-Promotions/images/Top-Logo-onRed-50.png">
@@ -113,7 +113,7 @@
               </li>
               <li class="divider" ng-show="user.Type!='TempCustomer' || AppConst.debug"></li>
               <li ng-show="user.Type!='TempCustomer'" class="logout">
-                <a href="#" class="451_btn_logout" ng-click="Logout()">
+                                <a href="#"  class="451_btn_logout" ng-click="Logout()">
                   <i class="fa fa-power-off text-danger"></i>
                   <span>{{'Log Out' | r | xlat}}</span>
                 </a>
@@ -160,7 +160,7 @@
             </a>
           </li>
         </ul> -->
-        <!-- For Mini Cart, replaces Shopping Cart code above -->
+        <!-- For Mini Cart, replaces Shopping Cart code above $ak -->
         <ul class="pull-right">
           <minicart></minicart>
         </ul>
@@ -202,7 +202,7 @@
     <a class="dropdown-toggle text-center" data-toggle="dropdown">
       <i class="fa fa-angle-down text-primary"></i>
     </a>
-    <ul class="451qa_topnav dropdown-menu">
+        <ul class="451qa_topnav dropdown-menu" >
       <categorytree tree='tree' current='currentCategory' />
     </ul>
   </nav>

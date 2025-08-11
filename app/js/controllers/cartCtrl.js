@@ -93,16 +93,22 @@ function ($scope, $routeParams, $location, $451, Order, OrderConfig, User) {
 		if (confirm('Are you sure you wish to remove this item from your cart?') == true) {
 			Order.deletelineitem($scope.currentOrder.ID, item.ID,
 				function(order) {
-					$scope.currentOrder = order;
-					Order.clearshipping($scope.currentOrder);
 					if (!order) {
 						$scope.user.CurrentOrderID = null;
 						User.save($scope.user, function(){
 							$location.path('catalog');
 						});
 					}
-					$scope.displayLoadingIndicator = false;
-					$scope.actionMessage = 'Your Changes Have Been Saved';
+					else{
+						$scope.currentOrder = order;
+						if(!$scope.isEditforApproval){
+							Order.clearshipping($scope.currentOrder);
+						}
+						$scope.saveChanges(function(){
+							$scope.displayLoadingIndicator = false;
+							$scope.actionMessage = 'Your Changes Have Been Saved';
+						})
+					}
 				},
 				function (ex) {
 					$scope.errorMessage = ex.Message.replace(/\<<Approval Page>>/g, 'Approval Page');

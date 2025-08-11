@@ -22,7 +22,7 @@ function productmatrix() {
         return [
             '<style>.matrix-grid > div {padding: 0;}.matrix-grid > div > div {text-align: center;height: 50px;padding: 10px 5px;}.matrix-grid > div > div:nth-of-type(even) {background-color: #f5f5f5;}.matrix-grid > div:last-of-type > div {padding: 5px;}.matrix-grid > div:last-of-type > div input {text-align: center;}.qty-invalid{border-color: #d9534f;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);color: #ccc;}</style>',
             '<form name="matrixSpecForm" novalidate="">',
-            '<div class="form-group" ng-repeat="s in product.Specs | onproperty:[{Property: \'CanSetForLineItem\', Value: true}]">', //Removed '' | definesvariant' for upload variable spec to work
+            '<div class="form-group" ng-repeat="s in product.Specs | onproperty:[{Property: \'CanSetForLineItem\', Value: true}]">', //Removed '' | definesvariant' for upload variable spec to work $ak
 				'<customfilefield customfield="s" ng-if="s.ControlType == \'File\'"></customfilefield>',
 				'<customtextfield customfield="s" ng-if="s.ControlType == \'Text\'"></customtextfield>',
 				'<customselectionfield change="specChanged" customfield="s" ng-if="s.ControlType == \'Selection\'"></customselectionfield>',
@@ -68,7 +68,7 @@ function productmatrix() {
             '<button class="btn btn-success btn-block btn-lg" type="button" id="451_btn_orderadd" ng-disabled="qtyError || matrixSpecForm.$invalid" ng-click="addVariantsToOrder()">',
             '<loadingindicator ng-show="addToOrderIndicator" /><i ng-show="qtyError" class="fa fa-warning"></i> {{addToOrderText | r}}</button>',
             '</div>',
-            '<div class="NSGcenter"><p><em><strong>Total Piece Price will be recalculated in the cart.</strong></em></p></div>',
+            '<div class="text-center"><p><em><strong>Total Piece Price will be recalculated in the cart.</strong></em></p></div>', // Added for customer $ak
             '</form>'
         ].join('');
     }
@@ -320,6 +320,15 @@ function ProductMatrix($451, Variant) {
             }, function(ex){
                 //count variant even if it is not active
                 variantCount++;
+if (variantCount == comboCount) {
+                    if (defineVariantSpecCount == 1) {
+                        //
+                    }
+                    else if (defineVariantSpecCount == 2) {
+                        //
+                    }
+                    _then(success, comboVariants, defineVariantSpecCount, spec1Name, spec2Name);
+                }
             });
         }
     }
@@ -432,7 +441,7 @@ function definesvariant() {
     return function(value) {
         var output = [];
         angular.forEach(value, function(s) {
-            if (s.DefinesVariant == false || s.ControlType == 'Text')
+            if (s.DefinesVariant == false || s.ControlType == 'Text' || s.ControlType == 'File')
                 output.push(s);
         });
         return output;

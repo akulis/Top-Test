@@ -1,4 +1,4 @@
-angular.module('OrderCloud-ProductZoom', []);
+angular.module('OrderCloud-ProductZoom', []);  
 
 angular.module('OrderCloud-ProductZoom')
     .directive('productzoom', productzoom)
@@ -18,7 +18,7 @@ function productzoom() {
             '.jetzoom{ margin:0 auto }' +
             '</style>'+
             '<div>'+
-            '<img class="jetzoom img-responsive"/>'+
+            '<img class="jetzoom img-responsive" imageonload/>'+
             '</div>',
         link: function($scope) {
             $scope.$watch('lineitem', function(lineitem){
@@ -57,8 +57,9 @@ function productzoom() {
                     lensAutoCircle: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.autoCircle,
                     innerZoom: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.iZoom
                 };
+                var imageURL = variant.PreviewUrl ? variant.PreviewUrl : variant.LargeImageUrl;
                 var jetZoomInstance = new JetZoom($('.jetzoom'), options);
-                jetZoomInstance.loadImage(variant.LargeImageUrl, variant.LargeImageUrl);
+                jetZoomInstance.loadImage(imageURL, imageURL);
             }, true);
 
             // Plugin Code:
